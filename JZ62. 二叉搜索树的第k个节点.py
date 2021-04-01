@@ -33,3 +33,20 @@ class Solution:
         self.k = k
         dfs(root)
         return self.res
+
+
+# 找出第k小的值
+class Solution:
+
+    def KthNode(self, root, k):
+        def dfs(root):
+            if not root: return
+            dfs(root.left)
+            if self.k == 0: return
+            self.k -= 1
+            if self.k == 0: self.res = root.val
+            dfs(root.right)
+
+        self.k = k
+        dfs(root)
+        return self.res

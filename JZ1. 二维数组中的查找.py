@@ -20,7 +20,8 @@ class Solution:
     def Find(self, target, array):
         # write code here
         rows = len(array) - 1
-        cols= len(array[0]) - 1
+        if rows < 0: return False
+        cols = len(array[0]) - 1
         i = rows
         j = 0
         while j <= cols and i >= 0:
