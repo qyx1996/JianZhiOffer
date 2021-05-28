@@ -13,3 +13,11 @@ class Solution:
         return res
 
     # 解法2：递归
+    result_array = []
+
+    def printListFromTailToHead(listNode):
+        # write code here
+        if listNode:
+            printListFromTailToHead(listNode.next)
+            result_array.append(listNode.val)
+        return result_array

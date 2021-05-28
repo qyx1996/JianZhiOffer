@@ -14,10 +14,9 @@ def bubbleSort(arr):
 # 加flag快速结束版本
 def bubbleSort(arr):
     n = len(arr)
-    flag = True
     # 遍历所有数组元素
     for i in range(n):
-
+        flag = True
         # Last i elements are already in place
         for j in range(0, n - i - 1):
 

@@ -13,6 +13,7 @@ class Solution:
         return n
 
 
+
 # 数学法
 # f(n)
 # =(f(n−1)+t)%n
